@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Topo da página - Call to Action */
+header {
+  padding: 10px;
+  background-color: #47b0f7;
+  text-align: center;
+  color: white;
+}
+.title {
+  font-size: 26px;
+}
+
+/* Section 01 - background & Container Captura */
+#section01 {
+  padding: 20px;
+  background-image: url(./Assets/people.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Container de captura */
+.formContainer {
+  float: right;
+  max-width: 230px;
+  padding: 15px;
+  background-color: #ffffffb9;
+}
+
+/* Responsividade do container de captura */
+@media screen and (max-width: 500px) {
+  .formContainer {
+    float: none;
+    max-width: 100%;
+    text-align: justify;
+  }
+}
+h2 {
+  font-size: 16px;
+}
+.mb {
+  margin-bottom: 10px;
+}
+input,
+select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url(./Assets/arrow.jpg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+}
+
+#button {
+  background-color: #47b0f7;
+  font-weight: bold;
+  color: white;
+}
+/* Fim da Section 01 - background & Container Captura */
+
+/* Rodapé - Apresentaçao Palestrante */
+footer {
+  padding: 40px;
+  background-color: #202121;
+  text-align: center;
+}
+.pic {
+  display: inline-block;
+  width: 160px;
+}
+.profile {
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 40px;
+  text-align: left;
+  color: white;
+}
+.profile h3,
+.profile p {
+  margin-top: 20px;
+}
+.profile h3 {
+  font-size: 24px;
+}
+
+/* Responsividade - Apresentaçao Palestrante */
+@media screen and (max-width: 500px) {
+  .pic {
+    display: block;
+    width: 300px;
+    margin: auto;
+  }
+  .profile {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: justify;
+  }
+  .profile h3 {
+    text-align: center;
+  }
+}
+/* FIM */
